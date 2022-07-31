@@ -1,0 +1,253 @@
+
+    .page__about {
+    display: grid;
+    min-height: 100vh;
+    grid-template:1fr minmax(100px,auto)/1fr;
+    
+    }
+    .main__aboutus {
+    
+    }
+    .about__banner{
+        display: grid;
+    grid-template-columns:1fr minmax(100px,1140px)1fr;
+    background: #ECF0F5;
+    border-radius: 0px 0px 150px 0px;
+    max-height: 500px;
+    position: relative;
+    }
+    .banner__about {
+    grid-column:2/3;
+    padding: 155px 10px 124px 10px;
+    }
+    .banner__body {}
+    .about__content {}
+    .about__aboutus {}
+    .aboutus__title {
+    font-weight: bold;
+    &:not(:last-child){
+        padding-bottom: 20px;
+    }
+    }
+    .title {}
+    .aboutus__text {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #575C74;
+    }
+    .aboutus__leftvector{
+        position: absolute;
+        left:0;
+        top:-40%;
+        img{
+            max-width: 100%;
+        }
+    }
+    .aboutus__rightvector{
+        position: absolute;
+        right: 0;
+        top: 57%;
+        img{
+            max-width: 100%;
+        }
+    }
+    /* ----about respirators */
+    .about__respirators {
+    margin-top:-20px;
+    
+    .respirators__content {}
+    .respirators__body {}
+    .respirators__items {}
+    .respirators__information {
+        padding-top: 95px;
+        padding-right: 50px;
+    }
+    .respirators__title {
+        padding-left: 0;	
+        margin-bottom: 25px;
+    }
+    .title {}
+    .respirators__text {
+    padding-left: 0;
+     p {
+        margin-bottom: 15px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+     }
+    }
+    .respirators__image {
+        margin-right: -30px;
+        position: relative;
+    
+    img{
+        max-width: 100%;
+        object-fit: cover;
+        position: relative;
+        z-index: 1;
+        
+        filter: drop-shadow(0px 15px 10px rgba(27, 95, 193, 0.19));
+    }
+     &::before{
+         content: '';
+         width: 490px;
+         height: 750px;
+         background-color: white;
+        z-index: 1;
+        border-radius: 16px 16px 16px 0px;
+        position: absolute;
+        left:65px;
+        top:-60px;
+    
+     }
+    }
+    }
+    // ----CHOOSE----
+    .main__choose {
+        display: grid;
+        grid-template-columns: 1fr minmax(200px, 1170px)1fr;
+        padding: 90px  15px 0 15px;
+        background: #F5FCFA;
+        z-index: 1;
+        position: relative;
+        
+    }
+   
+    .main__brands.brands__about {
+        background: #F5FCFA;
+        padding: 173px 0 100px 0;
+    }
+    .choose__body {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-row: 2/3;
+        grid-column: 2/3;
+    }
+    .choose__subtitle{
+        font-family: 'Rubik';
+        display: grid;
+        grid-column: 2/3;
+        text-align: center;
+        font-size: 48px;
+        line-height: 50px;
+        color: #0C122D;
+        padding-bottom: 40px;
+    }
+    .choose__items {
+    display: flex;
+    padding-left: 30px;
+    gap:30px;
+    }
+    .choose__icon {
+    }
+    .choose__item {
+    }
+    .choose__title {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 28px;
+        color: #0C122D;
+        padding-bottom: 15px;
+    }
+    .choose__text {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 22px;
+        color: #575C74;
+    }
+    
+    .choose_item {
+    }
+    // ----SUBSCRIBE----
+    .main__subscribe {
+        background-color: #1B5FC1;
+        padding: 100px 15px;
+        display: grid;
+        grid-template-columns: 1fr minmax(200px,1170px) 1fr;
+        
+        
+    }
+    .subscribe {
+    }
+    .subscribe__content {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-column: 2/3;
+    }
+    .subscribe__items {
+        display: grid;
+        align-items: center;
+        img{
+            max-width: 100%;
+        
+        }
+    }
+    .subscribe__item {
+    }
+    .subscribe__body{
+        display: flex;
+        align-items: center;
+    }
+    .subscribe__about{
+    padding-left: 20px;
+    
+    }
+    .subscribe__title {
+        
+        font-family: 'Rubik';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 30px;
+        color: #FFFFFF;
+    }
+    .subscribe__text {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #FFFFFF;
+    }
+    .subscribe__inform {
+        
+    }
+    .subscribe__email {
+        display: flex;
+    }
+    .subscribe__input {
+        background-color: #fff;
+        border-radius: 5px;
+        border:0;
+        width:100%;
+        min-height: 65px;
+        &::placeholder{
+            padding-left: 20px;
+        }
+        &:hover{
+            border: 3px solid #000;
+        }
+    }
+    .subscribe__button {
+        background: #FFB800;
+        border-radius: 10px;
+        color:#fff;
+        border:0;
+        width: 160px;
+        min-height: 65px;
+        transition: all 0.5s ease 0s;
+        cursor: pointer;
+        margin-left: 10px;
+    }
+    
+    // FOOTER-ABOUT
+    .footer-about{
+        padding: 75px 0 15px 0;
+    }
