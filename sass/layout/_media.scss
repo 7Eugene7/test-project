@@ -518,8 +518,18 @@
     &:before {
      display: none;
   }
-  
+  .respirators__face_img {
+    width: 80%;
+    height: 262px;
+    top: 60%;
+    object-position: right;
+    object-fit: contain;
+  }
 }
+}
+.main__choose {
+  padding-top: 50px;
+  margin-top:80px;
 }
 .choose__body {
   display: grid;
