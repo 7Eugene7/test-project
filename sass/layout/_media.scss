@@ -36,8 +36,10 @@
     grid-template-columns: repeat(1,1fr);
     max-width: 798px;
     margin: 0 auto;
+    padding-top: 50px;
 .message__inform {
   padding: 35px 0 35px 35px;
+  border-radius: 0;
 }
 
 }
@@ -139,7 +141,11 @@
     grid-template-columns: 1fr;
     gap:30px;
   }
-
+  .shop-main {
+    &__factory{
+      padding-top: 150px;
+    }
+  }
 }
 
 
@@ -405,8 +411,25 @@
   }
  }
 }
-.shop-main{
- 
+.shop-main {
+  &__factory {
+    padding-top: 100px;
+  }
+  &__image {
+    img {
+      border-radius:0;
+    }
+    &::before {
+      border-radius:0;
+    }
+  }
+  .product {
+  &__items {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+}
+  }
 }
 }
 
@@ -439,9 +462,7 @@
   .banner__text:not(:last-child) {
     padding-bottom: 10px;
   }
-  .main {
-    padding-top: 60px;
-  }
+
   .banner__background {
     img {
       border-radius: 0;
@@ -604,4 +625,20 @@
     object-fit: cover;
   }
 }
+
+.shop-main {
+  &__banner {
+    h1 {
+      font-size: 36px;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+  &___factory {
+    padding-top: 0;
+  }
+  
+}
+
 }

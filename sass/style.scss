@@ -20,6 +20,10 @@ height: 100%;
 	background: #F7FDFB;
 	
 }
+.grid {
+	grid-template-columns: 1fr minmax(200px,1170px)1fr;
+	display: grid;
+}
 
 
 

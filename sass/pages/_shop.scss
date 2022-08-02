@@ -2,14 +2,34 @@
     display: grid;
     min-height: 100vh;
     grid-template:1fr minmax(100px,auto)/1fr;
+    .shop__vector_l {
+        position: absolute;
+        top:-88%;
+        left: 0;
+        img {
+            max-width: 100%;
+        }
+    }
+    .shop__vector_r {
+        position: absolute;
+        top:25%;
+        right: 0;
+        img {
+            max-width: 100%;
+        }
+    }
 }
 .shop-main {
     padding-top: 90px;
+    padding-left: 15px;
+    padding-right: 15px;
     display: grid;
+    position: relative;
+    z-index: 10;
     &__image {
         position: absolute;
         width: 100%;
-        height: 100%;
+        height: 413px;
         top: 90px;
         left: 0;
         &::before {
@@ -42,7 +62,8 @@
         z-index: 2;
     }
     &__body {
-        display: flex;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
         grid-column: 2/3;
         
         h1 {
@@ -56,12 +77,155 @@
             font-size: 16px;
             line-height: 24px;
             color: #FFFFFF;
+            display: flex;
+            flex:1 1 auto;
         }
+   
     }
+    &__content {
+        display: grid;
+    }
+        .main__shop_links {
+            display: flex;
+            align-items: center;
+            a {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 20px;
+            line-height: 82px;
+            color: #777777;
+            text-decoration: none;
+            
+            }
+            :first-child {
+                &::after {
+                    content: '';
+                    border-right: 1px solid#777777;;
+                    margin-right: 10px;
+                    margin-left: 10px;
+                }
+            }
+            :last-child {
+                color:#FFB800;
+                font-weight: bold;
+            }
+        }
+    
     &__factory{
         padding-top: 100px;
         img{
             max-width: 100%;
         }
+    }
+}
+.product {
+    padding-top: 60px;
+    padding-bottom: 100px;
+    &__body {
+        display: grid;
+        grid-column: 2/3;
+    }
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 90px;
+    }
+    &__content {
+        padding: 0 25px 40px 30px;
+    }
+    &__image {
+        position: relative;
+    
+        img {
+            width: 100%;
+            border-radius: 15px 15px 0 0;
+        }
+        p {
+            position: absolute;
+            top:0;
+            right: 0;
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            align-items: center;
+            text-align: center;
+            color: #0C122D;
+            background: #FFB800;
+            padding: 10px 10px;
+            border-radius: 0 15px 0 0;
+        }
+    }
+    &__title {
+        font-family: 'Rubik';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 22px;
+        color: #0C122D;
+        line-height: 82px;
+    }
+    .subtitle {
+        font-family: 'Rubik';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        color: #575C74;
+        display: inline-block;
+        &:not(:last-child) {
+            padding-bottom: 35px;
+        }
+    }
+    &__price {
+        display: flex;
+        &:not(:last-child) {
+            padding-bottom: 25px;
+        }
+        p {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            color: #575C74;
+            padding-right: 15px;
+            font-family: 'Rubik';
+            display: flex;
+            align-items: center;
+        }
+       .price {
+        font-family: 'Rubik';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 35px;
+        color: #FFB800;
+        
+       } 
+    }
+    &__text {
+        font-size: 16px;
+        line-height: 30px;
+        color: #575C74;
+        &:not(:last-child) {
+            padding-bottom: 35px;
+        }
+    }
+    &__link {
+        font-family: 'Rubik';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 30px;
+        display: inline-block;
+        color: #FFFFFF;
+        background: #1B5FC1;
+        border-radius: 8px;    
+        padding: 10px 75px; 
+        text-decoration: none;
+    }
+    .item-pruducr__right {
+        background: #FDFDFD;
+        border: 1px solid #FFFFFF;
+        box-shadow: 0px 10px 15px rgba(27, 95, 193, 0.19);
+        border-radius: 16px 16px 16px 0px;
     }
 }
